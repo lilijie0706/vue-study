@@ -5,7 +5,20 @@
   https://www.zhihu.com/question/19568896
 
 
- 将已经存在的项目，进行修改后，如何提交到服务器
+ ###将已经存在的项目，进行修改后，如何提交到服务器
 1 git add .
 2 git commit -m "提交信息"
 3 git push
+
+##制作首页App组件
+1、完成 Header 区域，使用的是 Mint-UI 中的Header 组件
+2、制作底部的 Tabbar 区域，使用的是 MUI 的 Tabbar.html
++制作 购物车 小图标操作如下：扩展图标的 css 样式拷贝到项目中，扩展字体 ttf 文件到项目中 
++为购物车小图标添加如下样式：<span class="mui-icon mui-icon-extra mui-icon-extra-cart">
+3、要在 中间区域放置一个 router-view 来展示路由匹配到的组件
+
+##改造 tabbar 为 router-link 
+
+##设置路由高亮
+
+##点击 tabbar 中的路由链接，展示对应的路由组件
