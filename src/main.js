@@ -4,6 +4,13 @@ import VueRouter from 'vue-router'
 //1.2 安装路由
 Vue.use(VueRouter)
 
+//2.1导入vue-resource 
+
+import VueResource from 'vue-resource'
+
+//2.2安装 vue-resource
+Vue.use(VueResource)
+
 // //导入MUI 的样式   
 import './lib/mui/css/mui.min.css'
 import './lib/mui/css/icons-extra.css'
