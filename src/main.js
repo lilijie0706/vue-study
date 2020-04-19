@@ -4,12 +4,22 @@ import VueRouter from 'vue-router'
 //1.2 安装路由
 Vue.use(VueRouter)
 
+//导入moment时间插件
+import moment from 'moment'
+//定义全局的过滤器
+Vue.filter('dataFormat', function(dataStr, pattern = "YYYY-MM-DD HH:mm:ss") {
+    return moment(dataStr).format(pattern)
+
+})
+
 //2.1导入vue-resource 
 
 import VueResource from 'vue-resource'
 
-//2.2安装 vue-resource
+//2.2安装 vue-resource  
 Vue.use(VueResource)
+    //2.2.1设置请求的根路径
+Vue.http.options.root = 'https://autumnfish.cn'; //https://autumnfish.cn/
 
 // //导入MUI 的样式   
 import './lib/mui/css/mui.min.css'
