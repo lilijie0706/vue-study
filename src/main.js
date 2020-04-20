@@ -20,15 +20,21 @@ import VueResource from 'vue-resource'
 Vue.use(VueResource)
     //2.2.1设置请求的根路径
 Vue.http.options.root = 'https://autumnfish.cn'; //https://autumnfish.cn/
+//增加全局设置 post 时候表单数据格式 组织参数JSON  emulate/ˈemjuleɪt/ application/x-www-form-urlencoded
+Vue.http.options.emulateJSON = true;
 
 // //导入MUI 的样式   
 import './lib/mui/css/mui.min.css'
 import './lib/mui/css/icons-extra.css'
 //按需导入 Mint-UI 中的组件
-import { Header, Swipe, SwipeItem } from 'mint-ui'
-Vue.component(Header.name, Header)
-Vue.component(Swipe.name, Swipe)
-Vue.component(SwipeItem.name, SwipeItem)
+// import { Header, Swipe, SwipeItem, Lazyload } from 'mint-ui'
+// Vue.component(Header.name, Header)
+// Vue.component(Swipe.name, Swipe)
+// Vue.component(SwipeItem.name, SwipeItem)
+// Vue.use(Lazyload);
+import MintUI from 'mint-ui'
+Vue.use(MintUI)
+import 'mint-ui/lib/style.css'
 
 
 //1.3 导入自己的router.js 路由模块

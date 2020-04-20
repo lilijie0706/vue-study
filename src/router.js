@@ -8,6 +8,8 @@ import ShopcarContainer from './components/tabbar/ShopcarContainer.vue'
 import SearchContainer from './components/tabbar/SearchContainer.vue'
 import NewsList from './components/news/NewsList.vue'
 import NewsInfo from './components/news/NewsInfo.vue'
+import PhotoList from './components/photos/photoList.vue'
+import PhotoInfo from './components/photos/PhotoInfo.vue'
 
 var router = new VueRouter({
     routes: [ //配置路由规则的
@@ -21,7 +23,9 @@ var router = new VueRouter({
         { path: '/shopcar', component: ShopcarContainer },
         { path: '/search', component: SearchContainer },
         { path: '/home/newslist', component: NewsList },
-        { path: '/home/newsinfo/:id', component: NewsInfo }
+        { path: '/home/newsinfo/:id', component: NewsInfo },
+        { path: '/home/photolist', component: PhotoList },
+        { path: '/home/photoinfo:id', component: PhotoInfo }
 
 
     ],
