@@ -23,7 +23,8 @@
 export default {
     data(){
         return {
-            id:this.$route.params.id
+            id:this.$route.params.id,
+            photoinfo:{}
         };
     },
     methods:{
@@ -34,7 +35,7 @@ export default {
 				console.log(result.data.hotComments);
 				if (result.status == 200) {
             	//成功了
-					this.list=result.data.hotComments;
+					this.photoinfo=result.data.hotComments.user[0];
             		Toast("加载轮播图ok...");
           		} else {
             	//失败的

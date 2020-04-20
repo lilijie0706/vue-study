@@ -108,7 +108,15 @@ babel-plugin-transform-remove-strict-mode
 
 ###实现 详情页面的布局和美化，同时获取数据渲染页面
 
-
+div.info
+h1.title
+div.body
+h3回车
+maxhe---最大高度
+item.user.nickname
+item.content
+item.user.avatarUrl
+item.user.userId
 
 
 
