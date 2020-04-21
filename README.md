@@ -117,6 +117,15 @@ item.user.nickname
 item.content
 item.user.avatarUrl
 item.user.userId
+##实现图片详情中 缩略图的功能
+1、使用 插件 vue-preview 这个缩略图插件
+2、获取到所有的图片列表，然后使用 v-for 指令渲染数据
+3、注意：img 标签上的class 不能去掉
+4、注意：每个图片必须有W和H
+
+##  绘制 商品列表 页面基本结构并美化
+
+
 
 
 

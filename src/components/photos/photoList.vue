@@ -27,7 +27,7 @@
 				</div>
 				<!-- 图片列表区域 -->
 				<ul class="photo-list">
-					<router-link v-for="item in list"  :key="item.commentId" :to="'/home/photoinfo'+item.user.userId" tag="li">  
+					<router-link v-for="item in list"  :key="item.commentId" :to="'/home/photoinfo/'+item.user.userId" tag="li">  
 					<!-- item.user.avatarUrl -->
 						<img v-lazy="item.user.avatarUrl">
 						<div class="info">
@@ -88,7 +88,8 @@ export default {
 			//获取图片列表
 			
 			this.$http.get("comment/hot?type=0&id=386538").then(result=>{
-				console.log(result.status);
+				// console.log(result.status);
+				console.log("photoList.vue")
 				console.log(result.data.hotComments);
 				if (result.status == 200) {
             	//成功了
