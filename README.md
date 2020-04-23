@@ -131,7 +131,7 @@ item.user.userId
 2、要保证 手机 和开发项目的电脑 处于同一个 WIFI 环境中，也就是说 手机 可以 访问到 电脑的IP
 3、打开自己的 项目中 package.json 文件，在 dev 脚本中，添加一个 --host 指令，把当前 电脑的 WIFI ip地址，设置为 --host 的指令值：
 +如何查看自己电脑所处的 WIFI ip地址呢？cmd 中运行'ipconfig',查看无线网 的 ip 地址
-c2930e4... 坚持到最后一集,能否推送到远端,haishibuxing
+c2930e4... 坚持到最后一集,能否推送到远端,haishibuxing,hainenruhe 
 
 
 
